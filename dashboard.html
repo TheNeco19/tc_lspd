@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LSPD Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/auth.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      checkAuth();
+    });
+  </script>
+</head>
+<body class="light-mode">
+  <header>
+    <div class="header-container">
+      <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo" />
+      <h1>LSPD - Los Santos Police Department</h1>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="dienstvorschriften.html">Dienstvorschriften</a></li>
+        <li><a href="verordnung.html">verordnung</a></li>
+        <li><a href="funkcodes.html">Funkcodes</a></li>
+        <li><a href="rangstruktur.html">Rangstruktur</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="dashboard">
+      <h2>Willkommen im LSPD Dashboard</h2>
+      <p>Hier findest du interne Informationen und Werkzeuge für das Team.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Rangstruktur</h3>
+          <p>Alle aktuellen Ränge und Verantwortlichkeiten im Überblick.</p>
+          <a href="rangstruktur.html" class="btn-secondary">Anzeigen</a>
+        </article>
+
+        <article class="card">
+          <h3>Verordnungen</h3>
+          <p>Wichtige interne Vorschriften für die tägliche Arbeit.</p>
+          <a href="verordnung.html" class="btn-secondary">Anzeigen</a>
+        </article>
+
+        <article class="card">
+          <h3>Funkcodes</h3>
+          <p>Alle genutzten Codes für den Funkverkehr mit Bedeutung.</p>
+          <a href="funkcodes.html" class="btn-secondary">Anzeigen</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LSPD - Los Santos Police Department</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LSPD Login</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="assets/js/auth.js" defer></script>
+</head>
+<body>
+<div id="loginForm" role="main" aria-labelledby="loginTitle">
+  <h2 id="loginTitle">Login</h2>
+  <form id="form">
+    <input type="text" id="username" placeholder="Benutzername" aria-label="Benutzername" />
+    <input type="password" id="password" placeholder="Passwort" aria-label="Passwort" />
+    <button aria-describedby="loginError">Anmelden</button>
+  </form>
+  <p id="loginError" style="color: red; display:none;">Falscher Benutzername oder Passwort.</p>
+</div>
+
+</body>
+</html>
